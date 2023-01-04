@@ -1,0 +1,64 @@
+import java.util.Scanner;
+class BellmanFord
+{
+private int dist[];
+private int n;
+private static final int MAX_VALUE=999;
+public BellmanFord(int n)
+{
+this.n=n;
+dist=new int[n+1];
+}
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n,i,j,adj[][],source;
+System.out.println("Enter the number of vertices");
+n=sc.newInt();
+adj[][]=new int[n+1][n+1];
+System.out.println("Enter the adjacency matrix");
+for(i=1;i<=n;i++)
+{
+for(j=1;j<=n;j++)
+{
+adj[i][j]=sc.nextInt();
+if(i==j)
+{
+adj[i][j]=0;
+continue;
+}
+if(adj[i][j]==0)
+{
+adj[i][j]=MAX_VALUE;
+}
+System.out.println("Enter the source vertex");
+source=sc.nextInt();
+public void BellmanFordEval(int Source,int adjn[][])
+{
+for(int node=1;node<=this.n;node++)
+{
+dist[node]=MAX_VALUE;
+}
+dist[source]=0;
+for(int node=1;node<=n-1;node++)
+{
+//for(int srcnode=1;srcnode<=vertices;srcnode++)
+//for(int destnode=1;destnode<=vertices;destnode++)
+for(i=1;i<=n;i++)
+{
+for(j=1;j<=n;j++)
+{
+if(adjn[i][j]!=MAX_VALUE;
+{
+if(dist[j]>dis[i]+adjn[i][j])
+distn[j]=distn[i]+adj[i][j];
+for(i=1;1<=n;i++)
+{
+for(int j=1;j<=n;j++)
+{
+if(adjn[i][j]!=MAX_VALUE)
+{
+if(dist[destnode]>dest
+}
+}
+}
